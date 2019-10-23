@@ -18,10 +18,11 @@ Please create a Rails app that stores and looks up rates from shipping service p
   * Name of company
   * A flat shipping rate as a monetary value with currency
 
-* A model to represent a shipping rate, different from the flat rate. It should have these attributes:
+* A model to represent shipping rates that each provider has (different from the provider's flat rate). It should have these attributes:
   * Rate as monetary value with currency (per kilo)
   * Origin, as two-letter country code
   * Destination, as two-letter country code
+  * Relationship to the shipping provider
 
 * Means of loading the attached data into a data store. We are not looking for a UI for this, console is fine.
 * The converted monetary USD amounts all should be stored, in case we'd want to query them.
