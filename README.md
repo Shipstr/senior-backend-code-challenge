@@ -73,4 +73,4 @@ npm run start
 
 We encourage you to demonstrate your workflow via Git commits with good messages.
 
-When you are done, please either zip up your repo and email it to koho.engineering@expeditors.com or push it up to Github. If you need to clarify anything regarding this challenge, feel free to email us.
+When you are done, please either zip up your repo and email it to koho.engineering@expeditors.com. If you need to clarify anything regarding this challenge, feel free to email us.
