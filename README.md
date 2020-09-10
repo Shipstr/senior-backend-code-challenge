@@ -1,4 +1,4 @@
-# Fleet Backend Code Challenge
+# Koho Backend Code Challenge
 
 Our codebase is mainly made up of two repos, one for Rails and one for Vue. The Rails side primarily exposes an API consumed by the Vue app. This code challenge is intended to reflect that. We'd like you to build a Rails application with a few key components to demonstrate proficiency in many common Ruby and Rails patterns, which you'll find yourself using day-to-day here.
 
@@ -6,7 +6,7 @@ Though each engineer does specialize in either front-end or back-end, we still s
 
 We expect this exercise to take 2-4 hours at the most. Since this is a backend-focused challenge, we are not looking for styling or CSS work. And, don't concern yourself with configuring everything perfectly. This is just an exercise, so if you don't need to tweak something in order to meet the criteria below, leave it at defaults.
 
-At Fleet, we work with money in most world currencies across our data model. For reporting purposes, we need to be able to work with all money amounts in a common currency of US dollars, in addition to the original currency it was stored with. For example, it should be easy to get a sum of all amounts in USD.
+At Koho, we work with money in most world currencies across our data model. For reporting purposes, we need to be able to work with all money amounts in a common currency of US dollars, in addition to the original currency it was stored with. For example, it should be easy to get a sum of all amounts in USD.
 
 Although we'll leave it to you to otherwise decide which gems to bring in, we will recommend money-rails. And for this exercise, you'll need to add some currency conversion data. For the purposes of this exercise, assume USD -> EUR is 0.84663, and EUR -> USD is 1.18115. Don’t worry about any other currencies.
 
@@ -73,4 +73,4 @@ npm run start
 
 We encourage you to demonstrate your workflow via Git commits with good messages.
 
-When you are done, please either zip up your repo and email it to engineering@tryfleet.com or push it up to Github. If you need to clarify anything regarding this challenge, feel free to email us.
+When you are done, please either zip up your repo and email it to koho.engineering@expeditors.com or push it up to Github. If you need to clarify anything regarding this challenge, feel free to email us.
