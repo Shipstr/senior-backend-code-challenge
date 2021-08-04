@@ -24,3 +24,4 @@ gems.tags
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+master.key
