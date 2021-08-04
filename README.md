@@ -59,8 +59,8 @@ To start the Vue app:
 
 ```
 cd vue-spa
-npm i
-npm run serve
+yarn add
+yarn run serve
 ```
 
 We encourage you to demonstrate your workflow via Git commits with good messages.
