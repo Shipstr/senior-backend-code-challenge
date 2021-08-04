@@ -49,7 +49,7 @@ Please create a Rails app that stores and looks up rates from shipping service p
 
 # Front-end Portion
 
-We have created a bare-bones Vue app in directories `vue-spa`. Please choose **either** and create a simple index view consisting of a list of all rates showing provider's name, origin, destination, nicely formatted rate as a monetary value, and nicely formatted common rate in USD.
+We have created a bare-bones Vue app in directories `vue-spa`. Please create a simple index view consisting of a list of all rates showing provider's name, origin, destination, nicely formatted rate as a monetary value, and nicely formatted common rate in USD.
 
 Since this is a back-end challenge, we aren't looking for anything more complex than fetching this data from the Rails app on page load.
 
