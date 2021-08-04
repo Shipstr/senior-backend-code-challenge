@@ -2,7 +2,7 @@
 
 Our codebase is mainly made up of two repos, one for Rails and one for Vue. The Rails side primarily exposes an API consumed by the Vue app. This code challenge is intended to reflect that. We'd like you to build a Rails application with a few key components to demonstrate proficiency in many common Ruby and Rails patterns, which you'll find yourself using day-to-day here.
 
-Though each engineer does specialize in either front-end or back-end, we still sometimes have full-stack responsibilities. So we'd also like you to implement some basic functionality in either the given Vue or React app.
+Though each engineer does specialize in either front-end or back-end, we still sometimes have full-stack responsibilities. So we'd also like you to implement some basic functionality in either the given Vue app.
 
 We expect this exercise to take 2-4 hours at the most. Since this is a backend-focused challenge, we are not looking for styling or CSS work. And, don't concern yourself with configuring everything perfectly. This is just an exercise, so if you don't need to tweak something in order to meet the criteria below, leave it at defaults.
 
@@ -49,7 +49,7 @@ Please create a Rails app that stores and looks up rates from shipping service p
 
 # Front-end Portion
 
-We have created a bare-bones Vue and React app in directories `vue-spa` and `react-spa`. Please choose **either** and create a simple index view consisting of a list of all rates showing provider's name, origin, destination, nicely formatted rate as a monetary value, and nicely formatted common rate in USD.
+We have created a bare-bones Vue app in directories `vue-spa`. Please choose **either** and create a simple index view consisting of a list of all rates showing provider's name, origin, destination, nicely formatted rate as a monetary value, and nicely formatted common rate in USD.
 
 Since this is a back-end challenge, we aren't looking for anything more complex than fetching this data from the Rails app on page load.
 
@@ -61,14 +61,6 @@ To start the Vue app:
 cd vue-spa
 npm i
 npm run serve
-```
-
-To start the React app:
-
-```
-cd react-spa
-npm i
-npm run start
 ```
 
 We encourage you to demonstrate your workflow via Git commits with good messages.
