@@ -1,4 +1,4 @@
-# Koho Backend Code Challenge
+# Koho Senior Backend Code Challenge
 
 We'd like you to finish building the Rails application with a few key components to demonstrate proficiency in many common Ruby and Rails patterns, which you'll find yourself using day-to-day here.
 
