@@ -4,7 +4,7 @@ We'd like you to finish building the Rails application with a few key components
 
 Though each engineer does specialize in either front-end or back-end, we still sometimes have full-stack responsibilities. So we'd also like you to implement some basic functionality in the given Vue app.
 
-*We expect this exercise to take 2-4 hours at the most.* If you ran out of time, please comment on what is leftt.
+*We expect this exercise to take 2-4 hours at the most.* If you ran out of time, please comment on what remains to be done in the README.
 
 Since this is a backend-focused challenge, we are not looking for styling or CSS, but will notice if any improvements are made. Also, don't concern yourself with configuring everything perfectly. This is just an exercise, so if you don't need to tweak something in order to meet the criteria below, leave it at the defaults.
 
@@ -31,7 +31,7 @@ Please utilize the Rails app which stores and looks up rates from shipping servi
 #### Requirements
 * Create a way to load the attached data into the data store. Via console is fine.
 * Make sure all the converted monetary USD amounts are stored.
-* Implement a reusable way to ensure that whenever a configurable money column is assigned, that same amount is also set as the other amount, but converted to USD. It should be easy to include this functionality into any other model that works with currency. Bring this functionality into both the shipping rate model and the shipping service provider model. This is an example of how it should behave:
+* Implement a reusable way to ensure that whenever a configurable money column is assigned the original value is stored along with a conversion to a 'default' currency (i.e. USD). It should be easy to include this functionality into any other model that works with currency. Bring this functionality into both the shipping rate model and the shipping service provider model. This is an example of how it should behave:
 
   ```ruby
   some_model = SomeModel.new
