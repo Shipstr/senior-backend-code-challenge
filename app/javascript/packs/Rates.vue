@@ -1,14 +1,17 @@
 <template>
   <div>
-    <h1>Providers List</h1>
     <ul>
       <li class="title">
-        <div>Company Name</div>
-        <div>Total</div>
+        <div>Carrier</div>
+        <div>Origin</div>
+        <div>Destination</div>
+        <div>Rate</div>
       </li>
-      <li v-for="p in providers" :key="p.name">
-        <div>{{ p.name }}</div>
-        <div>{{ p.rate.total }} {{ p.rate.currency }}</div>
+      <li v-for="rate in rates" :key="rate.id">
+        <div>{{ rate.name }}</div>
+        <div>{{ rate.origin }}</div>
+        <div>{{ rate.destination }}</div>
+        <div>{{ rate.rate }} USD</div>
       </li>
     </ul>
   </div>
@@ -16,16 +19,16 @@
 
 <script>
 export default {
-  name: 'Providers',
+  name: 'Rates',
   data () {
     return {
-      providers: [
+      rates: [
         {
-          name: 'company name',
-          rate: {
-            total: 100,
-            currency: 'USD'
-          }
+          id: 1,
+          name: 'carrier name',
+          origin: 'US',
+          destination: 'ZA',
+          rate: 1200.00
         }
       ]
     }
@@ -40,13 +43,11 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-
 li {
   display: flex;
   justify-content: space-between;
   margin: 0 10px;
 }
-
 .title {
   font-weight: bold;
   border-bottom: 1px solid #c0c0c0;
