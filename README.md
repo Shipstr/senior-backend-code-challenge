@@ -14,7 +14,7 @@ Although we'll leave it to you to otherwise decide which gems to bring in, we do
 
 # Back-end Portion
 
-Please utilize the Rails app which stores and looks up rates from shipping service providers.
+Please utilize the Rails app which stores and looks up rates from carriers.
 
 To run the app:
 ```
@@ -27,22 +27,24 @@ bin/rails s
 
 Your app should have these properties:
 
-#### Provider Model
-* A model to represent a shipping service provider. It should have these attributes:
+#### Carrier Model
+* A model to represent a carrier. It should have these attributes:
   * Name of company
   * A flat shipping rate as a monetary value with currency
 
 #### Rates Model
-* A model to represent shipping rates that each provider has (different from the provider's flat rate). It should have these attributes:
+* A model to represent shipping rates that each carrier has (different from the carrier's flat rate). It should have these attributes:
   * Rate as monetary value with currency (per kilo)
   * Origin, as two-letter country code
   * Destination, as two-letter country code
-  * Relationship to the shipping provider
+  * Relationship to the carrier
 
 #### Requirements
-* Create a way to load the attached data into the data store. Via console is fine.
+* Create Carrier and Rate models.
+* Create a way to load the CSV's `carrier_data.csv` and `rate_data.csv` into the database using these models.
 * Make sure all the converted monetary USD amounts are stored.
-* Implement a reusable way to ensure that whenever a configurable money column is assigned the original value is stored along with a conversion to a 'default' currency (i.e. USD). It should be easy to include this functionality into any other model that works with currency. Bring this functionality into both the shipping rate model and the shipping service provider model. This is an example of how it should behave:
+* Implement a reusable way to ensure that whenever a configurable money column is assigned the original value is stored along with a conversion to a 'default' currency (i.e. USD). It should be easy to include this functionality into any other model that works with currency. Bring this functionality into both the shipping rate model and the carrier model. Below is an example of how it should behave:
+* Create API endpoints to fetch and update rates.
 
   ```ruby
   some_model = SomeModel.new
@@ -70,7 +72,7 @@ The repo has Vue already installed with Webpacker.
 
 #### Requirements
 * Fetch the data from the Rails app on page load.
-* Update the simple index view with a list of: provider's name, origin, destination, formatted rate as a monetary value, formatted common rate in USD.
+* Update the simple index view with a list of: carrier's name, origin, destination, formatted rate as a monetary value, formatted common rate in USD.
 * Create a simple bare-bones form that allows editing and updating a rate. Allow changing all attributes except the common USD rate.
 
 # README

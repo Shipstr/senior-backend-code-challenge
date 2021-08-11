@@ -1,4 +1,4 @@
-"rate","currency","origin","destination","shipping company id"
+"rate","currency","origin","destination","carrier id"
 32.08,"USD","US","AQ",3
 21.02,"EUR","ES","IS",4
 22.7,"EUR","PK","GA",3
