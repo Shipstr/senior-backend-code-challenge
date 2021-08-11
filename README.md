@@ -20,7 +20,9 @@ To run the app:
 ```
 yarn
 bundle
-rails s
+bin/rails db:create
+bin/rails db:migrate
+bin/rails s
 ```
 
 Your app should have these properties:
