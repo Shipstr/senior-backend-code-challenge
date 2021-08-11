@@ -14,7 +14,18 @@ Although we'll leave it to you to otherwise decide which gems to bring in, we do
 
 # Back-end Portion
 
-Please utilize the Rails app which stores and looks up rates from shipping service providers. The app should have these properties:
+Please utilize the Rails app which stores and looks up rates from shipping service providers.
+
+To run the app:
+```
+yarn
+bundle
+bin/rails db:create
+bin/rails db:migrate
+bin/rails s
+```
+
+Your app should have these properties:
 
 #### Provider Model
 * A model to represent a shipping service provider. It should have these attributes:
@@ -50,7 +61,9 @@ Please utilize the Rails app which stores and looks up rates from shipping servi
   some_model.amount # => 30.0 EUR
   some_model.common_amount # => 35.43 USD
   ```
-* Write any Rspec's you deem necessary.
+
+* Write any specs you deem necessary.
+
 # Front-end Portion/UI
 
 The repo has Vue already installed with Webpacker.
@@ -59,14 +72,6 @@ The repo has Vue already installed with Webpacker.
 * Fetch the data from the Rails app on page load.
 * Update the simple index view with a list of: provider's name, origin, destination, formatted rate as a monetary value, formatted common rate in USD.
 * Create a simple bare-bones form that allows editing and updating a rate. Allow changing all attributes except the common USD rate.
-
-
-To run the app:
-```
-yarn
-bundle
-rails s
-```
 
 # README
 * Update the README.MD with how to run your app and how to load your data.
